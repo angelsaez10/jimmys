@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jimmy’s Nerja | Discoteca</title>
+  <meta
+    name="description"
+    content="Discoteca en Nerja con eventos, entradas online, reservados VIP y la mejor experiencia nocturna."
+  />
+  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)" />
+  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin />
+  <link
+    href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Orbitron:wght@600;700&display=swap)"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="logo">
+        <span class="logo-main">Jimmy's</span>
+        <span class="logo-sub">Nerja</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio">Inicio</a>
+        <a href="#entradas">Entradas</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#vip">VIP</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">La noche empieza aqui</p>
+        <h1>La discoteca que convierte cada noche en un evento</h1>
+        <p class="hero-text">
+          Sesiones exclusivas, fiestas tematicas, DJs invitados y una experiencia VIP
+          pensada para vivir Nerja al maximo.
+        </p>
+        <div class="hero-buttons">
+          <a href="#entradas" class="btn btn-primary">Comprar entradas</a>
+          <a href="#eventos" class="btn btn-secondary">Ver eventos</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlight section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Evento destacado</p>
+          <h2>La gran fiesta de esta semana</h2>
+        </div>
+
+        <div class="highlight-card">
+          <div class="highlight-image"></div>
+          <div class="highlight-info">
+            <span class="badge">Sabado especial</span>
+            <h3>Neon Night Experience</h3>
+            <p>
+              Una noche con show visual, sonido envolvente, performances en directo y
+              el mejor ambiente hasta el cierre.
+            </p>
+
+            <div class="highlight-meta">
+              <div>
+                <strong>Fecha</strong>
+                <span>Sabado 22 - 23:30</span>
+              </div>
+              <div>
+                <strong>Precio</strong>
+                <span>Desde 15 EUR</span>
+              </div>
+              <div>
+                <strong>Zona</strong>
+                <span>Pista + VIP</span>
+              </div>
+            </div>
+
+            <a href="#entradas" class="btn btn-primary">Conseguir entrada</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="entradas">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Entradas online</p>
+          <h2>Compra tus entradas</h2>
+          <p>
+            Consulta las sesiones activas y compra tu acceso para cada dia o evento especial.
+          </p>
+        </div>
+
+        <div class="cards-grid" id="ticketsContainer"></div>
+      </div>
+    </section>
+
+    <section class="section" id="eventos">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Programacion</p>
+          <h2>Proximos eventos</h2>
+          <p>
+            Agenda semanal con fiestas tematicas, sesiones universitarias y noches especiales.
+          </p>
+        </div>
+
+        <div class="cards-grid" id="eventsContainer"></div>
+      </div>
+    </section>
+
+    <section class="section vip-section" id="vip">
+      <div class="container vip-layout">
+        <div class="vip-content">
+          <p class="section-tag">Reservados y botellas</p>
+          <h2>Vive la experiencia VIP</h2>
+          <p>
+            Reserva tu mesa, accede a zonas exclusivas y disfruta de una noche premium
+            con atencion personalizada.
+          </p>
+
+          <ul class="vip-list">
+            <li>Acceso preferente sin colas</li>
+            <li>Mesas VIP para grupos</li>
+            <li>Botellas y packs premium</li>
+            <li>Atencion personalizada durante la noche</li>
+          </ul>
+
+          <div class="vip-actions">
+            <a href="[wa.me](https://wa.me/34000000000)" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              Reservar por WhatsApp
+            </a>
+            <a href="#contacto" class="btn btn-secondary">Mas informacion</a>
+          </div>
+        </div>
+
+        <div class="vip-card">
+          <h3>Pack reservado premium</h3>
+          <div class="vip-price">250 EUR</div>
+          <p>Incluye acceso para 5 personas, mesa VIP y botella premium.</p>
+          <div class="vip-features">
+            <span>5 personas</span>
+            <span>Mesa VIP</span>
+            <span>1 botella</span>
+            <span>Refrescos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="galeria">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-tag">Ambiente</p>
+          <h2>Asi se vive la noche</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item large"></div>
+          <div class="gallery-item"></div>
+          <div class="gallery-item"></div>
+          <div class="gallery-item"></div>
+          <div class="gallery-item wide"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container contact-layout">
+        <div class="contact-info">
+          <p class="section-tag">Ubicacion y contacto</p>
+          <h2>Encuentranos</h2>
+          <p>
+            Estamos en el centro de Nerja. Sigue nuestras redes para enterarte de
+            cada sesion, promociones y eventos especiales.
+          </p>
+
+          <div class="contact-block">
+            <strong>Direccion</strong>
+            <span>Calle Ejemplo 25, Nerja</span>
+          </div>
+
+          <div class="contact-block">
+            <strong>Telefono</strong>
+            <span>+34 600 000 000</span>
+          </div>
+
+          <div class="contact-block">
+            <strong>Email</strong>
+            <span>info@jimmysnerja.es</span>
+          </div>
+
+          <div class="contact-block">
+            <strong>Instagram</strong>
+            <span>@jimmysnerja</span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <h3>Solicita informacion</h3>
+
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+
+          <label for="message">Mensaje</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Quiero informacion sobre reservados o proximos eventos"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn btn-primary btn-full">Enviar solicitud</button>
+          <p class="form-message" id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <h4>JIMMY'S NERJA</h4>
+        <p>Eventos, entradas, reservados VIP y la mejor experiencia nocturna.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#entradas">Entradas</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
