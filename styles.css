@@ -5,10 +5,9 @@
   --card-border: rgba(255, 255, 255, 0.12);
   --text: #f5f7ff;
   --muted: #b9bfd3;
-  --primary: #9d4edd;
+  --primary: #98481f;
   --primary-2: #c77dff;
-  --accent: #ff2e93;
-  --gold: #f0c66e;
+  --accent: #d3ae55;
   --shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
   --radius: 18px;
   --radius-sm: 12px;
@@ -67,7 +66,7 @@ img {
 
 .section-tag,
 .eyebrow {
-  color: var(--gold);
+  color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: 0.78rem;
@@ -155,7 +154,7 @@ img {
 
 .logo-sub {
   font-size: 0.72rem;
-  color: var(--gold);
+  color: var(--accent);
   letter-spacing: 0.32em;
   margin-top: 4px;
 }
@@ -301,7 +300,7 @@ img {
   padding: 8px 12px;
   border-radius: 999px;
   background: rgba(240, 198, 110, 0.12);
-  color: var(--gold);
+  color: var(--accent);
   border: 1px solid rgba(240, 198, 110, 0.22);
   margin-bottom: 16px;
   font-size: 0.82rem;
@@ -357,7 +356,7 @@ img {
 
 .ticket-date,
 .event-date {
-  color: var(--gold);
+  color: var(--accent);
   font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -442,7 +441,7 @@ img {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold), var(--accent));
+  background: linear-gradient(135deg, var(--accent), var(--accent));
 }
 
 .vip-card {
@@ -457,7 +456,7 @@ img {
 .vip-price {
   font-size: 2.6rem;
   font-weight: 800;
-  color: var(--gold);
+  color: var(--accent);
   margin-bottom: 10px;
 }
 
@@ -574,7 +573,7 @@ img {
 
 .form-message {
   margin-top: 14px;
-  color: var(--gold);
+  color: var(--accent);
   font-size: 0.95rem;
 }
 
